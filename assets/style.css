@@ -84,6 +84,24 @@ input {
   text-align: center;
 }
 
+footer{
+  text-align: center;
+  margin-top: 6rem;
+  background-color: #383b53;
+  width: inherit;
+  
+}
+
+footer p{
+color: white;
+}
+
+footer a{
+  color:rgb(224, 224, 224);
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .desktop {
   background-color: #383b53;
   display: flex;
