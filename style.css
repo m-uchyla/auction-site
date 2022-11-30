@@ -1,0 +1,282 @@
+/*
+COLOR PALLETE
+1. White              - #FFFFFF
+2. Middle Blue Purple - #8783D1
+3. Independence       - #383B53
+4. Pine Green         - #0B7A75
+5. Jungle Green       - #00B295
+*/
+
+* {
+  font-family: "Poppins";
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* nav {
+  background-color: #383b53;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 3rem;
+  padding-right: 3rem;
+  padding-left: 5rem;
+}
+
+nav ul {
+  list-style-type: none; 
+  overflow: hidden;
+  margin: 0;
+}
+
+nav li {
+  float: right;
+} */
+
+nav {
+  background-color: #383b53;
+  display: flex;
+  /* grid-template-columns: 1fr auto; */
+  column-gap: 3rem;
+  padding-right: 3rem;
+  padding-left: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  /* Usuwa punktowanie listy */
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+}
+
+nav a {
+  padding: 1.2rem;
+  display: block;
+  color: white;
+  text-decoration: none; /* Usuwa linię spod linków */
+  text-align: center;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: #8783d1;
+}
+
+nav a:active {
+  box-shadow: inset 0 0 10px #59568f;
+}
+
+section {
+  padding-top: 5rem;
+  margin: auto;
+  width: 75%;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input{
+  width: 75%;
+}
+
+.featured {
+  /* height: 400px; */
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+/* .featured img {
+  margin-left: auto;
+  transform: scale(0.8);
+} */
+.featured img{
+  width: 80%;
+  height: auto;
+}
+
+.desc {
+  text-align: justify;
+}
+
+.descFooter{
+    display: grid;
+    column-gap: 1rem;
+}
+
+.descTime{
+  display: grid;
+  grid-template-columns: 25px auto;
+}
+
+.descTime h2 {
+  text-align: left;
+  font-size: 25px;
+}
+
+.descTime i{
+  font-size: 25px;
+  margin: 0;
+  padding-top: 9px;
+}
+
+.row {
+  display: grid;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+.buy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
+.button {
+  color: white;
+  cursor: pointer;
+  min-height: 40px;
+  background-color: #0e9c95;
+  text-align: center;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+  background-color: #00ceab;
+}
+
+.priceCon {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 4fr;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.fa-clock-o {
+  margin-left: 1rem;
+}
+
+.priceCon i {
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: right;
+  vertical-align: middle;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.priceCon h3 {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.sold {
+  color: rgb(160, 160, 160);
+}
+
+.priceCon h4 {
+  text-align: left;
+  color: rgb(53, 53, 53);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.price h5 {
+  color: rgb(190, 8, 8);
+  font-size: 20px;
+  display: block;
+  text-align: right;
+  margin: 0;
+}
+
+.col {
+  width: 262px;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+}
+
+.cfooter {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.price {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media (min-width: 500px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .descFooter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured{
+    grid-template-columns: repeat(1, 1fr);
+  }
+    /* .featured img {
+      transform: scale(0.01);
+    } */
+}
+
+@media (min-width: 900px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .descFooter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featured{
+    grid-template-columns: repeat(2, 1fr);
+  }
+    /* .featured img {
+      margin-left: auto;
+      transform: scale(0.8);
+    } */
+}
