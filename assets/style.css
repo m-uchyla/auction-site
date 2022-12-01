@@ -136,10 +136,16 @@ footer a{
   cursor: pointer;
   font-size: 40px;
   color: white;
+  margin-top: -10px;
+}
+
+.openIcon{
+  color:white;
 }
 
 .closeIcon {
   display: none;
+  color: white;
 }
 
 .menu {
@@ -171,10 +177,18 @@ footer a{
   padding: 3rem;
 }
 
-/* .featured img {
-  margin-left: auto;
-  transform: scale(0.8);
-} */
+.featuredName{
+  font-size: 20px;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.featuredName i{
+  text-align: right;
+  padding-top: 17px;
+}
+
 .featured img {
   width: 80%;
   height: auto;
@@ -333,15 +347,6 @@ footer a{
 }
 
 @media (max-width: 500px) {
-  .row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .descFooter {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .featured {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .lastAuctionsSec {
     flex-direction: column;
   }
@@ -378,4 +383,14 @@ footer a{
   .lastAuctionsSec {
     flex-direction: row;
   }
+}
+
+@media only screen and (max-width: 1770px) {
+
+  .lastAuctionsSec {
+
+    justify-content: center;
+
+  }
+
 }
